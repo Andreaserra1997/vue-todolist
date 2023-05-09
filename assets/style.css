@@ -64,3 +64,15 @@ li {
     padding-top: 1rem;
     border-bottom: 1px solid lightslategray;
 }
+
+i {
+    cursor: pointer;
+}
+
+.text-todo {
+    cursor: pointer;
+}
+
+.listdone {
+    text-decoration: line-through;
+}
