@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.logo,
+.new-task,
+.tasks-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.tasks-container {
+    background-color: lightgray;
+}
+
+input,
+button {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+input {
+    padding-inline-end: 5rem;
+    padding-inline-start: 1rem;
+}
+button {
+    padding-inline: 1.5rem;
+    margin-left: .7rem;
+}
+
+.error,
+h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: .5rem;
+}
+
+.error {
+    color: red;
+}
