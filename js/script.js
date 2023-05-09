@@ -3,17 +3,17 @@ const app = Vue.createApp({
         return {
             todos: [
                 {
-                    text:'Fare i compiti',
+                    text:'',
                     done: true,
                 },
                 {
-                    text:'Fare la spesa',
+                    text:'',
                     done: true,
                 },
                 {
-                    text:'Fare il bucato',
+                    text:'',
                     done: true,
-                },
+                }
             ]
         };
     },

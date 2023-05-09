@@ -27,13 +27,13 @@
         </div>
 
         <div class="tasks-container">
-            <ul v-if="todos.text.lenght != 0">
+            <ul v-if="todos.lenght != 0">
                 <li v-for="todo in todos" class="task">
                     <div>{{ todo.text }}</div>
                     <div><i class="fas fa-times"></i></div>
                 </li>
             </ul>
-            <h2>Non ci sono task <i class="fa-regular fa-face-grin-tongue-wink"></i></h2>
+            <h2 v-else>Non ci sono task <i class="fa-regular fa-face-grin-tongue-wink"></i></h2>
         </div>
     </div>
 </body>
