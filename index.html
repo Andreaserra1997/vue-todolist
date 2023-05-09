@@ -19,8 +19,8 @@
         </div>
 
         <div class="new-task">
-            <input type="text" placeholder="Inserisci qui il testo">
-            <button>Aggiungi</button>
+            <input type="text" placeholder="Inserisci qui il testo" v-model="newTodo">
+            <button @click="addTodo(i)">Aggiungi</button>
             <div class="error">
                 <small>Inserisci un testo con almeno 5 caratteri</small>
             </div>
@@ -31,7 +31,8 @@
                 <li v-for="(todo, i) in todos" class="task">
                     <div 
                         class="text-todo" 
-                        :class="{listdone: this.todos[i].done == false}" @click="todoDone(i)"
+                        :class="{listdone: todos[i].done == false}" 
+                        @click="todoDone(i)"
                     >{{ todo.text }}</div>
                     <div><i class="fas fa-times" @click="deleteElement(i)"></i></div>
                 </li>

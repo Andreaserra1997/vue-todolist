@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
+            newTodo: '',
             todos: [
                 {
                     text:'asdfg',
@@ -19,10 +20,14 @@ const app = Vue.createApp({
     },
     methods: {
         todoDone(i) {
-            return this.todos[i].done = !this.todos[i].done;
+            this.todos[i].done = !this.todos[i].done;
         },
         deleteElement(index) {
             this.todos.splice(index, 1);
+        },
+        addTodo(i) {
+            this.todos.unshift(this.newTodo);
+            this.newTodo = '';
         },
     }
 });
