@@ -19,9 +19,9 @@
         </div>
 
         <div class="new-task">
-            <input type="text" placeholder="Inserisci qui il testo" v-model="newTodo">
+            <input @keyup.enter="addTodo" type="text" placeholder="Inserisci qui il testo" v-model="newTodo">
             <button @click="addTodo(i)">Aggiungi</button>
-            <div class="error">
+            <div v-show="inputError" class="error">
                 <small>Inserisci un testo con almeno 5 caratteri</small>
             </div>
         </div>
